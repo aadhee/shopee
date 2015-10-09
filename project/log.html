@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>SHOPEE</TITLE>
+<style>
+div{
+
+
+
+BACKGROUND-COLOR:F7F3F3}
+div.home{border-width:2px;
+border-style:dotted;
+border-color:58FAF4;
+border-collapse:collapse;
+BACKGROUND-COLOR:F7F3F3;}
+</style>
+<script>
+function validate() {	
+       if (login.usr.value == "") {
+                alert("Please give username");
+       
+                return false;
+            }
+
+            
+
+            if (login.pwd.value == "") {
+                alert("Please give Password");
+
+                return false;
+            }
+
+            //password length must be greater than 5 characters
+
+            if (login.pwd.value.lenght < 6) {
+                alert("Please give a Password more than 5 characters");
+        
+                return false;
+            }
+            return( true );
+  }
+   
+</script>
+</head>
+<div class="title" width="1500">
+<h1 style="text-align:center; font-color:yellow;font-size:40">
+<img src="ra.jpg" align="center" alt="logo" height="50" width="50">
+SHOPEE<img src="ra.jpg" align="center" alt="logo" height="50" width="50"></H1> 
+<h1 align="right"><a href="register.html" ><button width="48" height="48">REGISTER</button></a>
+<a href="register.html" ><button width="48" height="48">LOG IN</button></a><a href="app1.HTML" ><button width="48" height="48">HOME</button></a></h1>
+</DIV>
+<DIV CLASS="HOME">
+
+
+</h1> 
+<h1 align="right">
+</h1>
+<H1 style="text-align:center; font-color:yellow;font-size:20">
+
+<table align="center">
+<tr align="center">
+<td><img src="reg1.jpg" alt="register"></td>
+<td><form method="POST" action="log.jsp" name="form1">
+
+    <table border="2" align="center" cellpadding="7">
+<caption>SIGN_UP</caption>
+   
+        <tr>
+
+            <td><strong>Name:</strong></td>
+
+   
+            <td>
+ 
+                <input type="text" name="name"/>
+            </td>
+     
+        </tr>
+
+      <tr>
+
+            <td><strong>PHONE number:</strong></td>
+
+   
+            <td>
+ 
+                <input type="number" name="reg" required/>
+            </td>
+     
+        </tr>
+        <td><strong>Email:</strong></td>
+
+
+        <td>
+    
+            <input type="text" name="email"/>
+        </td>
+    
+        </tr>
+
+       
+        <tr>
+            <td><strong>Gender:</strong></td>
+            <td>
+                
+                <input type="radio" name="gender" value="Male"/>Male
+                <input type="radio" name="gender" value="Female"/>Female
+
+            </td>
+        </tr>
+
+       <tr>
+            <td><strong>Password:</strong></td>
+            <td>
+                
+                <input type="password" name="pass"/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Password:</strong></td>
+            <td>
+                
+                <input type="password" name="r_pass"/>
+            </td>
+        </tr>	
+        
+        <tr align="center">
+
+            <td>
+                <!--Submit Button, Function verify need to be called when we process
+                submit button-->
+                <input type="submit" value="Submit" onClick="return (verify());"/>
+            </td>
+
+            <td>
+                <!--Reset Button-->
+                <input type="reset">
+            </td>
+        </tr>
+</form>
+
+    <!--Form Close -->
+
+
+        <!--Table Close-->
+    </table>
+</td>
+<td><img src="reg1.jpg" alt="register"></td>
+</tr></table>
+
+</h1>
+
+
+
+</div>
+
+
+</HTML>
+
